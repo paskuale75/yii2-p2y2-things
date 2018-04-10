@@ -31,6 +31,8 @@
 		"yiisoft/yii2": "^2.0",
 		"p2made/yii2-p2y2-base": "^1.1",
 		"p2made/yii2-p2y2-moment": "^2.0",
+		"twbs/bootstrap": "^4.1",
+		"thomaspark/bootswatch": "^4.1",
 		"bpampuch/pdfmake": "^0.1.24",
 		"components/flag-icon-css": "^2.8",
 		"dimsemenov/magnific-popup": "^1.1",
@@ -45,8 +47,7 @@
 		"philippfrenzel/yii2fullcalendar": "^3.0",
 		"ramsey/uuid": "^3.5",
 		"rmrevin/yii2-fontawesome": "^2.17",
-		"stuk/jszip": "^3.0",
-		"thomaspark/bootswatch": "^3.3"
+		"stuk/jszip": "^3.0"
 	},
 
 	"autoload": {
