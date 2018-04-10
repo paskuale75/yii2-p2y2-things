@@ -51,7 +51,7 @@
 
 	"extra": {
 		"branch-alias": {
-			"dev-new-version": "^2.8"
+			"dev-new-version": "2.8.0"
 		}
 	},
 
