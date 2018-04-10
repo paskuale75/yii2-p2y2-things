@@ -29,7 +29,7 @@
 
 	"require": {
 		"yiisoft/yii2": "^2.0",
-		"p2made/yii2-p2y2-base": "dev-new-version as 1.1.3",
+		"p2made/yii2-p2y2-base": "dev-new-version",
 		"p2made/yii2-p2y2-moment": "^2.0",
 		"bower-asset/jquery": "3.3.*@stable",
 		"twbs/bootstrap": "^4.1",
