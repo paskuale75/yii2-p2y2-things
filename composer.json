@@ -49,12 +49,6 @@
 		"thomaspark/bootswatch": "^3.3"
 	},
 
-	"extra": {
-		"branch-alias": {
-			"dev-new-version": "2.8.0"
-		}
-	},
-
 	"autoload": {
 		"psr-4": {
 			"p2m\\": ""
