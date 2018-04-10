@@ -1,4 +1,4 @@
-P2Y2Things v2.8.x-dev
+P2Y2Things v3.0.0-dev
 ==========
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things/license)](https://packagist.org/packages/p2made/yii2-p2y2-things)
