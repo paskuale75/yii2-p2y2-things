@@ -3,17 +3,7 @@
 	"description": "A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles &/or Widgets.",
 	"type": "yii2-extension",
 	"keywords": [
-		"yii2", "yii", "extension", "PHP",
-		"asset", "bundle", "widget",
-		"menu", "metisMenu",
-		"Bootstrap Social", "social",
-		"dataTables", "data", "tables",
-		"Flot", "Morris", "Morris.JS", "charts", "excanvas",
-		"raphael", "graphics", "ector", "ector graphics",
-		"SweetAlert", "alerts", "Holder.js", "placeholder", "placeholder-image",
-		"moment.js", "time", "moment", "timezone", "moment-timezone",
-		"FullCalendar", "calendar",
-		"html5shiv", "Respond.JS"
+		"yii2", "yii", "extension", "PHP", "asset", "bundle", "widget", "menu", "metisMenu", "Bootstrap Social", "social", "dataTables", "data", "tables", "Flot", "Morris", "Morris.JS", "charts", "excanvas", "raphael", "graphics", "ector", "ector graphics", "SweetAlert", "alerts", "Holder.js", "placeholder", "placeholder-image", "moment.js", "time", "moment", "timezone", "moment-timezone", "FullCalendar", "calendar", "html5shiv", "Respond.JS"
 	],
 	"license": "MIT",
 	"authors": [
@@ -28,7 +18,8 @@
 		"source": "https://github.com/p2made/yii2-p2y2-things"
 	},
 
-	"version": "2.8.0",
+	"version": "2.8.x-dev",
+	"prefer-stable" : true,
 	"minimum-stability": "dev",
 
 	"require": {
@@ -52,7 +43,11 @@
 		"stuk/jszip": "^3.0",
 		"thomaspark/bootswatch": "^3.3"
 	},
-	"require-dev": {
+
+	"extra": {
+		"branch-alias": {
+			"dev-v3.0.0-dev": "2.8.0"
+		}
 	},
 
 	"autoload": {
