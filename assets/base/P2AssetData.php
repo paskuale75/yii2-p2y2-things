@@ -26,7 +26,7 @@ namespace p2m\assets\base;
 class P2AssetData
 {
 	/*
-	 * @var array
+	 * @var private static array
 	 * protected $assetsData;
 	 */
 
@@ -73,4 +73,25 @@ class P2AssetData
 			],
 		),
 	 );
+
+	function assetData() {
+	}
 }
+
+
+return [
+	'id' => 'app-backend-tests',
+	'components' => [
+		'assetManager' => [
+			'basePath' => __DIR__ . '/../../assets/web/backend/pub',
+		],
+	],
+];
+
+
+$params = array_merge(
+	require(__DIR__ . '/../../common/config/params.php'),
+	require(__DIR__ . '/../../common/config/params-local.php'),
+	require(__DIR__ . '/params.php'),
+	require(__DIR__ . '/params-local.php')
+);
