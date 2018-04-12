@@ -37,7 +37,7 @@ class P2JqueryAsset extends \p2m\assets\base\P2AssetBundle
 {
 	public function init()
 	{
-		if(!self::getDataFor('jqueryAsset')) {
+		if(!$this->getDataFor('jqueryAsset')) {
 			return;
 		}
 

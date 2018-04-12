@@ -68,7 +68,7 @@ class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 	 * public $_staticEnd = [] | false;
 	 */
 
-	protected static getDataFor($assetName)
+	protected getDataFor($assetName)
 	{
 		if(!array_key_exists($assetName, P2AssetData::assetsData)) {
 			return false;
@@ -85,13 +85,4 @@ class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 
 		return true;
 	}
-
-
-
-
-	public static function dataFor($assetName)
-	{
-		return self::assetsData[$assetName];
-	}
-
 }
