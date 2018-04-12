@@ -29,69 +29,49 @@ class P2AssetData
 	 * @var private static array
 	 * protected $assetsData;
 	 */
-
-	 private static $assetsData = array(
-		'jqueryAsset' => array(
-			'name' => 'jquery',
+	private static $assetsData = array(
+		'jqueryAsset' => [
 			'version' => '3.3.1',
-			'published' => [
-				'sourcePath' => '@p2m@/jquery',
-				'js' => [
-					'jquery-##-version-##.min.js',
+			'data' => array(
+				'published' => [
+					'sourcePath' => '@p2m@/jquery',
+					'js' => [
+						'jquery-##-version-##.min.js',
+					],
 				],
-			],
-			'static' => [
-				'baseUrl' => 'https://code.jquery.com',
-				'js' => [
-					'jquery-##-version-##.min.js',
+				'static' => [
+					'baseUrl' => 'https://code.jquery.com',
+					'js' => [
+						'jquery-##-version-##.min.js',
+					],
+					'jsIntegrity' => 'sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT',
+					'crossorigin' => 'anonymous',
 				],
-				'jsIntegrity' => 'sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT',
-				'crossorigin' => 'anonymous',
-			],
-		),
-		'bootstrapPluginAsset' => array(
-			'name' => 'bootstrap',
-			'version' => '4.0.0',
-			'published' => [
-				'fullPath' => 'fullPath',
-				'basePath' => 'basePath',
-				'sourcePath' => '@twbs/bootstrap/dist',
-				'js' => [
-					'js/bootstrap.min.js',
-				],
-			],
-			'static' => [
-				'baseUrl' => 'https://maxcdn.bootstrapcdn.com/bootstrap/',
-				'js' => [
-					'js/bootstrap.min.js',
-				],
-				'jsIntegrity' => 'sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl',
-				'crossorigin' => 'anonymous',
-			],
-			'depends' => [
-				'p2m\assets\base\P2JqueryAsset',
-			],
-		),
-	 );
-
-	function assetData() {
-	}
-}
-
-
-return [
-	'id' => 'app-backend-tests',
-	'components' => [
-		'assetManager' => [
-			'basePath' => __DIR__ . '/../../assets/web/backend/pub',
+			),
 		],
-	],
-];
-
-
-$params = array_merge(
-	require(__DIR__ . '/../../common/config/params.php'),
-	require(__DIR__ . '/../../common/config/params-local.php'),
-	require(__DIR__ . '/params.php'),
-	require(__DIR__ . '/params-local.php')
-);
+		'bootstrapPluginAsset' => [
+			'version' => '4.0.0',
+			'data' => array(
+				'published' => [
+					'fullPath' => 'fullPath',
+					'basePath' => 'basePath',
+					'sourcePath' => '@twbs/bootstrap/dist',
+					'js' => [
+						'js/bootstrap.min.js',
+					],
+				],
+				'static' => [
+					'baseUrl' => 'https://maxcdn.bootstrapcdn.com/bootstrap/',
+					'js' => [
+						'js/bootstrap.min.js',
+					],
+					'jsIntegrity' => 'sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl',
+					'crossorigin' => 'anonymous',
+				],
+				'depends' => [
+					'p2m\assets\base\P2JqueryAsset',
+				],
+			),
+		],
+	);
+}

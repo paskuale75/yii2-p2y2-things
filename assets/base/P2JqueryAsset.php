@@ -35,25 +35,12 @@ namespace p2m\assets\base;
 
 class P2JqueryAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '3.2.1';
-
-	private $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/jquery',
-			'js' => [
-				'jquery-##-version-##.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//code.jquery.com',
-			'js' => [
-				'jquery-##-version-##.min.js',
-			],
-		],
-	);
-
 	public function init()
 	{
+		if(!self::getDataFor('jqueryAsset')) {
+			return;
+		}
+
 		$this->insertAssetVersion($this->resourceData['static']['js'][0]);
 		$this->insertAssetVersion($this->resourceData['published']['js'][0]);
 

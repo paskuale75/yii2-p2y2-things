@@ -23,20 +23,20 @@
 
 namespace p2m\assets\base;
 
+use p2m\assets\base\P2AssetData;
+
 class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 {
-	/*
-	 * @var string
-	 * protected $version;
-	 */
-
 	/*
 	 * @var string
 	 * protected $_p2mProjectId;
 	 */
 	protected $_p2mProjectId = 'yii2-p2y2-things';
 
-	/**
+	/*
+	 * @var string
+	 * protected $version;
+	 *
 	 * @var string
 	 * public $sourcePath;
 	 *
@@ -67,4 +67,31 @@ class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 	 * @var array | false
 	 * public $_staticEnd = [] | false;
 	 */
+
+	protected static getDataFor($assetName)
+	{
+		if(!array_key_exists($assetName, P2AssetData::assetsData)) {
+			return false;
+		}
+
+		$assetData = P2AssetData::assetsData[$assetName];
+
+		if(!array_key_exists('version', $assetData)) {
+			$this->version = $assetData['version'];
+		}
+		if(!array_key_exists('data', $assetData)) {
+			$this->resourceData = $assetData['data'];
+		}
+
+		return true;
+	}
+
+
+
+
+	public static function dataFor($assetName)
+	{
+		return self::assetsData[$assetName];
+	}
+
 }
