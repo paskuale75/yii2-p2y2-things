@@ -23,8 +23,6 @@
 
 namespace p2m\assets\base;
 
-use p2m\assets\base\P2AssetData;
-
 class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 {
 	/*
@@ -70,11 +68,14 @@ class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 
 	protected dataFor($assetName)
 	{
-		if(!array_key_exists($assetName, P2AssetData::assetsData)) {
+		$allAssetsData = require(__DIR__ . '/_assetsData.php'),
+
+		if(!array_key_exists($assetName, $allAssetsData)) {
 			return false;
 		}
 
-		$assetData = P2AssetData::assetsData[$assetName];
+		$assetData = $allAssetsData[$assetName];
+		$allAssetsData = null;
 
 		if(!array_key_exists('version', $assetData)) {
 			$this->version = $assetData['version'];
