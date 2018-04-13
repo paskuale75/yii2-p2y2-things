@@ -35,12 +35,7 @@ namespace p2m\assets\base;
 
 class P2JqueryAsset extends \p2m\assets\base\P2AssetBundle
 {
-	public function __construct()
-	{
-		if(!$this->dataFor('jqueryAsset')) {
-			return;
-		}
-	}
+	public $assetName = 'jqueryAsset';
 
 	public function init()
 	{

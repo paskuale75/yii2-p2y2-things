@@ -66,12 +66,14 @@ class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 	 * public $_staticEnd = [] | false;
 	 */
 
-	protected dataFor($assetName)
+	//public $assetName = 'jqueryAsset';
+
+	public function __construct()
 	{
-		$allAssetsData = require(__DIR__ . '/_assetsData.php'),
+		$allAssetsData = require(__DIR__ . '/_assetsData.php');
 
 		if(!array_key_exists($assetName, $allAssetsData)) {
-			return false;
+			return;
 		}
 
 		$assetData = $allAssetsData[$assetName];
@@ -83,7 +85,5 @@ class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 		if(!array_key_exists('data', $assetData)) {
 			$this->resourceData = $assetData['data'];
 		}
-
-		return true;
 	}
 }
