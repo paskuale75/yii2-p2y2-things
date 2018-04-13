@@ -35,12 +35,15 @@ namespace p2m\assets\base;
 
 class P2JqueryAsset extends \p2m\assets\base\P2AssetBundle
 {
-	public function init()
+	public function __construct()
 	{
 		if(!$this->dataFor('jqueryAsset')) {
 			return;
 		}
+	}
 
+	public function init()
+	{
 		$this->insertAssetVersion($this->resourceData['static']['js'][0]);
 		$this->insertAssetVersion($this->resourceData['published']['js'][0]);
 
