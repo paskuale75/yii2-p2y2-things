@@ -33,6 +33,9 @@ class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 
 	/*
 	 * @var string
+	 * protected $assetName;
+	 *
+	 * @var string
 	 * protected $version;
 	 *
 	 * @var string
@@ -65,8 +68,6 @@ class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 	 * @var array | false
 	 * public $_staticEnd = [] | false;
 	 */
-
-	//public $assetName = 'jqueryAsset';
 
 	public function __construct()
 	{
