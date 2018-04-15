@@ -35,31 +35,11 @@ namespace p2m\assets\base;
 
 class P2BootstrapPluginAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '3.3.7';
-
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@bower/bootstrap/dist',
-			'js' => [
-				'js/bootstrap.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/',
-			'js' => [
-				'js/bootstrap.min.js',
-			],
-		],
-		'depends' => [
-			'p2m\assets\base\P2JqueryAsset',
-		],
-	);
-
 	public function init()
 	{
-		$this->resourceData['static']['baseUrl'] .= $this->version;
+		$this->staticData['baseUrl'] .= $this->version;
 
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset();
 		parent::init();
 	}
 }

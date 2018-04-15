@@ -32,11 +32,9 @@ namespace p2m\assets\base;
 
 class P2YiiAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@yii/assets';
-	public $js = [
-		'yii.js',
-	];
-	public $depends = [
-		'p2m\assets\base\P2JqueryAsset',
-	];
+	public function init()
+	{
+		$this->configureAsset();
+		parent::init();
+	}
 }

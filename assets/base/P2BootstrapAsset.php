@@ -35,43 +35,9 @@ namespace p2m\assets\base;
 
 class P2BootstrapAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '3.3.7';
-
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@p2m@/bootstrap-##-version-##-dist',
-			'css' => [
-				'css/bootstrap.min.css',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/##-version-##',
-			'css' => [
-				'css/bootstrap.min.css',
-			],
-		],
-		'depends' => [
-			'p2m\assets\base\P2BootstrapPluginAsset',
-		],
-	);
-
 	public function init()
 	{
-		if(isset(\Yii::$app->params['p2assets']['bootswatchTheme'])) {
-			$themeName = \Yii::$app->params['p2assets']['bootswatchTheme'];
-			$this->resourceData['sourcePath'] = '@vendor/thomaspark/bootswatch/' . $themeName;
-			$this->resourceData['published']['baseUrl'] = [
-				'bootswatch/##-version-##/' . $themeName,
-			];
-			$this->resourceData['published']['css'] = [
-				'bootstrap.min.css',
-			];
-			$this->resourceData['static']['css'] = [
-				'bootstrap.min.css',
-			];
-		}
-
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset();
 		parent::init();
 	}
 }
