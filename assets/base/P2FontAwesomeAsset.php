@@ -35,26 +35,9 @@ namespace p2m\assets\base;
 
 class P2FontAwesomeAsset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $version = '4.7.0';
-
-	protected $resourceData = array(
-		'published' => [
-			'sourcePath' => '@vendor/fortawesome/font-awesome',
-			'css' => [
-				'css/font-awesome.min.css',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//maxcdn.bootstrapcdn.com/font-awesome/##-version-##',
-			'css' => [
-				'css/font-awesome.min.css',
-			],
-		],
-	);
-
 	public function init()
 	{
-		$this->configureAsset($this->resourceData);
+		$this->configureAsset();
 		parent::init();
 	}
 }
