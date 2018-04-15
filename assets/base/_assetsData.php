@@ -1,4 +1,25 @@
 <?php
+/**
+ * _assetsData.php
+ *
+ * @author Pedro Plowman
+ * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @link https://github.com/p2made
+ * @license MIT
+ *
+ * @package p2made/yii2-p2y2-things
+ */
+
+/**
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ #####                                           ##### ^ #####
+ * ##### ^ #####      DO NOT USE THIS FILE DIRECTLY!       ##### ^ #####
+ * ##### ^ #####                                           ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
+ */
+
 return array(
 	'P2JqueryAsset' => array(
 		'version' => '3.2.1',

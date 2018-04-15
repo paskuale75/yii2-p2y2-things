@@ -27,16 +27,20 @@ class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 {
 	/*
 	 * @var string
-	 * protected $version;
-	 */
-
-	/*
-	 * @var string
 	 * protected $_p2mProjectId;
 	 */
 	protected $_p2mProjectId = 'yii2-p2y2-things';
 
-	/**
+	/*
+	 * @var string
+	 * protected $version;
+	 *
+	 * @var array
+	 * protected $publishedData;
+	 *
+	 * @var array
+	 * protected $staticData;
+	 *
 	 * @var string
 	 * public $sourcePath;
 	 *
@@ -67,4 +71,38 @@ class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 	 * @var array | false
 	 * public $_staticEnd = [] | false;
 	 */
+
+	public function __construct()
+	{
+		$allAssetsData = require(__DIR__ . '/_assetsData.php');
+
+		if(!array_key_exists($this->assetName, $allAssetsData)) {
+			return;
+		}
+
+		$assetData = $allAssetsData[$assetName];
+		$allAssetsData = null;
+
+		if(array_key_exists('version', $assetData)) {
+			$this->version = $assetData['version'];
+		}
+		if(array_key_exists('published', $assetData)) {
+			$this->publishedData = $assetData['published'];
+		}
+		if(array_key_exists('static', $assetData)) {
+			$this->staticData = $assetData['static'];
+		}
+		if(array_key_exists('cssOptions', $assetData)) {
+			$this->cssOptions = $assetData['cssOptions'];
+		}
+		if(array_key_exists('jsOptions', $assetData)) {
+			$this->jsOptions = $assetData['jsOptions'];
+		}
+		if(array_key_exists('depends', $assetData)) {
+			$this->depends = $assetData['depends'];
+		}
+		if(array_key_exists('publishOptions', $assetData)) {
+			$this->publishOptions = $assetData['publishOptions'];
+		}
+	}
 }
