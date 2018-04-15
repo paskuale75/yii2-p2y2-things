@@ -1060,4 +1060,565 @@ return array(
 			'p2m\assets\JuiAsset',
 		],
 	),
+	'FullCalendarPrintAsset' => array(
+		'version' => '3.2.0',
+		'published' => [
+			'sourcePath' => '@p2m@/fullcalendar-##-version-##',
+			'css' => [
+				'fullcalendar.print.css',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/##-version-##',
+			'css' => [
+				'fullcalendar.print.css',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+		'cssOptions' => [
+			'media' => 'print'
+		],
+	),
+	'MomentAsset' => array(
+		'version' => '2.22.0',
+		'published' => [
+			'sourcePath' => '@p2m@/moment-##-version-##/min',
+			'js' => [
+				'moment.min.js'
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment.js/##-version-##',
+			'js' => [
+				'moment.min.js',
+			],
+		],
+	),
+	'MomentTimezoneAsset' => array(
+		'version' => '0.5.14',
+		'published' => [
+			'sourcePath' => '@p2m@/moment-timezone-##-version-##/builds',
+			'js' => [
+				'moment-timezone.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment-timezone/##-version-##',
+			'js' => [
+				'moment-timezone.min.js',
+			],
+		],
+	),
+	'GMapsApiAsset' => array(
+		'static' => [
+			'js' => [
+				'http://maps.google.com/maps/api/js?sensor=true',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'GMapsAsset' => array(
+		'version' => '0.4.25',
+		'published' => [
+			'sourcePath' => '@p2m@/gmaps-##-version-##',
+			'js' => [
+				'gmaps.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/gmaps.js/##-version-##',
+			'js' => [
+				'gmaps.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+			'p2m\assets\GMapsApiAsset',
+		],
+	),
+	'HolderAsset' => array(
+		'version' => '2.9.4',
+		'published' => [
+			'sourcePath' => '@vendor/imsky/holderjs',
+			'js' => [
+				'holder.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/holder/##-version-##',
+			'js' => [
+				'holder.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'IsotopeAsset' => array(
+		'version' => '3.0.2',
+		'published' => [
+			'sourcePath' => '@p2m@/isotope-##-version-##/dist',
+			'js' => [
+				'jquery.isotope.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/##-version-##',
+			'js' => [
+				'isotope.pkgd.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'JqueryCountToAsset' => array(
+		'version' => '1.2.0',
+		'published' => [
+			'sourcePath' => '@p2m@/jquery-countTo-##-version-##',
+			'js' => [
+				'jquery.countTo.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdn.jsdelivr.net/jquery.countto/##-version-##',
+			'js' => [
+				'jquery.countTo.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+			'p2m\assets\base\P2JqueryAsset',
+		],
+	),
+	'JqueryEasingAsset' => array(
+		'version' => '1.4.1',
+		'published' => [
+			'sourcePath' => '@p2m@/jquery.easing-##-version-##',
+			'css' => [],
+			'js' => [
+				'jquery.easing.min.js',
+				'jquery.easing.compatibility.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jquery-easing/##-version-##',
+			'css' => [],
+			'js' => [
+				'jquery.easing.min.js',
+				'jquery.easing.compatibility.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'JqueryMigrateAsset' => array(
+		'version' => '3.0.0',
+		'published' => [
+			'sourcePath' => '@p2m@/jquery',
+			'js' => [
+				'jquery-migrate-##-version-##.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//code.jquery.com',
+			'js' => [
+				'jquery-migrate-##-version-##.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+			'p2m\assets\base\P2JqueryAsset',
+		],
+	),
+	'JuiAsset' => array(
+		'version' => '1.12.1',
+		'published' => [
+			'sourcePath' => '@p2m@/jquery',
+			'js' => [
+				'jquery-ui.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//code.jquery.com',
+			'js' => [
+				'ui/##-version-##/jquery-ui.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+			'p2m\assets\base\P2JqueryAsset',
+		],
+	),
+	'Lightbox2Asset' => array(
+		'version' => '2.9.0',
+		'published' => [
+			'sourcePath' => '@p2m@/lightbox2-##-version-##/dist',
+			'css' => [
+				'css/lightbox.min.css',
+			],
+			'js' => [
+				'js/lightbox.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/lightbox2/##-version-##',
+			'css' => [
+				'css/lightbox.min.css',
+			],
+			'js' => [
+				'js/lightbox.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'MagnificPopupAsset' => array(
+		'version' => '1.1.0',
+		'published' => [
+			'sourcePath' => '@vendor/dimsemenov/magnific-popup/dist',
+			'css' => [
+				'magnific-popup.min.css',
+			],
+			'js' => [
+				'jquery.magnific-popup.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/##-version-##',
+			'css' => [
+				'magnific-popup.min.css',
+			],
+			'js' => [
+				'jquery.magnific-popup.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'MasonryAsset' => array(
+		'version' => '4.1.1',
+		'published' => [
+			'sourcePath' => '@p2m@/masonry-##-version-##/dist',
+			'js' => [
+				'masonry.pkgd.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/masonry/##-version-##',
+			'js' => [
+				'masonry.pkgd.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'MetisMenuAsset' => array(
+		'version' => '2.6.2',
+		'published' => [
+			'sourcePath' => '@vendor/onokumus/metismenu/dist',
+			'css' => [
+				'metisMenu.min.css',
+			],
+			'js' => [
+				'metisMenu.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/metisMenu/##-version-##',
+			'css' => [
+				'metisMenu.min.css',
+			],
+			'js' => [
+				'metisMenu.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'MorrisAsset' => array(
+		'version' => '0.5.1',
+		'published' => [
+			'sourcePath' => '@p2m@/morris.js-##-version-##',
+			'css' => [
+				'morris.css',
+			],
+			'js' => [
+				'morris.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/morris.js/##-version-##',
+			'css' => [
+				'morris.css',
+			],
+			'js' => [
+				'morris.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+			'p2m\assets\RaphaelAsset',
+		],
+	),
+	'P2CoreAsset' => array(
+		'published' => [
+			'sourcePath' => '@p2m@/pub',
+			'css' => [
+				'css/p2additions.css',
+			],
+			'js' => [
+				//'js/p2additions.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\base\P2YiiAsset',
+			'p2m\assets\base\P2BootstrapAsset',
+			'p2m\assets\base\P2FontAwesomeAsset',
+		],
+	),
+	'PrettyPhotoAsset' => array(
+		'version' => '3.1.6',
+		'published' => [
+			'sourcePath' => '@p2m@/prettyPhoto_##-version-##',
+			'css' => [
+				'css/prettyPhoto.min.css',
+			],
+			'js' => [
+				'js/jquery.prettyPhoto.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/prettyPhoto/##-version-##',
+			'css' => [
+				'css/prettyPhoto.min.css',
+			],
+			'js' => [
+				'js/jquery.prettyPhoto.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'QunitAsset' => array(
+		'version' => '2.2.1',
+		'published' => [
+			'sourcePath' => '@p2m@/jquery',
+			'css' => [
+				'qunit-##-version-##.css',
+			],
+			'js' => [
+				'qunit-##-version-##.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//code.jquery.com/qunit',
+			'css' => [
+				'qunit-##-version-##.css',
+			],
+			'js' => [
+				'qunit-##-version-##.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'RaphaelAsset' => array(
+		'version' => '2.2.7',
+		'published' => [
+			'sourcePath' => '@p2m@/raphael-##-version-##',
+			'js' => [
+				'raphael.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/raphael/##-version-##',
+			'js' => [
+				'raphael.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'ScrollRevealAsset' => array(
+		'version' => '3.3.4',
+		'published' => [
+			'sourcePath' => '@p2m@/scrollreveal-##-version-##/dist',
+			'css' => [],
+			'js' => [
+				'scrollreveal.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/##-version-##',
+			'css' => [],
+			'js' => [
+				'scrollreveal.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'SimpleLineIconsAsset' => array(
+		'version' => '2.4.1',
+		'published' => [
+			'sourcePath' => '@p2m@/simple-line-icons-##-version-##',
+			'css' => [
+				'css/simple-line-icons.css',
+			],
+			'js' => [],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/simple-line-icons/##-version-##',
+			'css' => [
+				'simple-line-icons.min.css',
+			],
+			'js' => [],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'SweetAlertAsset' => array(
+		'version' => '1.1.3',
+		'published' => [
+			'sourcePath' => '@p2m@/sweetalert-##-version-##/dist',
+			'css' => [
+				'sweetalert.css',
+			],
+			'js' => [
+				'sweetalert.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/sweetalert/##-version-##',
+			'css' => [
+				'sweet-alert.css',
+			],
+			'js' => [
+				'sweet-alert.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'TimelineAsset' => array(
+		'published' => [
+			'sourcePath' => '@p2m@/pub',
+			'css' => [
+				'css/timeline.css',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'TimelineCssAsset' => array(
+		'version' => '1.0.0',
+		'published' => [
+			'sourcePath' => '@p2m@/Timeline.css-##-version-##',
+			'css' => [
+				'css/timeline.css',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/timeline.css/##-version-##',
+			'css' => [
+				'timeline.min.css',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+		],
+	),
+	'WowAsset' => array(
+		'version' => '1.1.2',
+		'published' => [
+			'sourcePath' => '@p2m@/WOW-##-version-##/dist',
+			'js' => [
+				'wow.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/wow/##-version-##',
+			'js' => [
+				'wow.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+			'p2m\assets\AnimateAsset',
+		],
+	),
+	'JplayerAsset' => array(
+		'version' => '2.9.2',
+		'published' => [
+			'sourcePath' => '@vendor/happyworm/jplayer/dist',
+			'js' => [
+				'jplayer/jquery.jplayer.min.js',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jplayer/##-version-##',
+			'js' => [
+				'jplayer/jquery.jplayer.min.js',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+			'p2m\assets\base\P2JqueryAsset',
+		],
+	),
+	'BlueMondayAsset' => array(
+		'version' => '2.9.2',
+		'published' => [
+			'sourcePath' => '@vendor/happyworm/jplayer/dist',
+			'css' => [
+				'skin/blue.monday/css/jplayer.blue.monday.min.css',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jplayer/##-version-##',
+			'css' => [
+				'skin/blue.monday/css/jplayer.blue.monday.min.css',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+			'p2m\assets\jPlayer\JplayerAsset',
+		],
+	),
+	'PinkFlagAsset' => array(
+		'version' => '2.9.2',
+		'published' => [
+			'sourcePath' => '@vendor/happyworm/jplayer/dist',
+			'css' => [
+				'skin/pink.flag/css/jplayer.pink.flag.min.css',
+			],
+		],
+		'static' => [
+			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jplayer/##-version-##',
+			'css' => [
+				'skin/pink.flag/css/jplayer.pink.flag.min.css',
+			],
+		],
+		'depends' => [
+			'p2m\assets\P2CoreAsset',
+			'p2m\assets\jPlayer\JplayerAsset',
+		],
+	),
 );
