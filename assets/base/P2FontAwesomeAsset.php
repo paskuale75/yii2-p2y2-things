@@ -37,7 +37,7 @@ class P2FontAwesomeAsset extends \p2m\assets\base\P2AssetBundle
 {
 	public function init()
 	{
-		$this->configureAsset();
+		$this->configureDataFileAsset();
 		parent::init();
 	}
 }

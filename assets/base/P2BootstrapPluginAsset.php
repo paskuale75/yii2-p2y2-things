@@ -39,7 +39,7 @@ class P2BootstrapPluginAsset extends \p2m\assets\base\P2AssetBundle
 	{
 		$this->staticData['baseUrl'] .= $this->version;
 
-		$this->configureAsset();
+		$this->configureDataFileAsset();
 		parent::init();
 	}
 }

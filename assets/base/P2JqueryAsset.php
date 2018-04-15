@@ -40,7 +40,7 @@ class P2JqueryAsset extends \p2m\assets\base\P2AssetBundle
 		$this->insertAssetVersion($this->publishedData['js'][0]);
 		$this->insertAssetVersion($this->staticData['js'][0]);
 
-		$this->configureAsset();
+		$this->configureDataFileAsset();
 		parent::init();
 	}
 }

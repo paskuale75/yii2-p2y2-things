@@ -34,7 +34,7 @@ class P2YiiAsset extends \yii\web\AssetBundle
 {
 	public function init()
 	{
-		$this->configureAsset();
+		$this->configureDataFileAsset();
 		parent::init();
 	}
 }
