@@ -33,7 +33,7 @@
 
 	"require": {
 		"yiisoft/yii2": "^2.0",
-		"p2made/yii2-p2y2-base": "1.1.4b",
+		"p2made/yii2-p2y2-base": "1.1.5-beta",
 		"p2made/yii2-p2y2-moment": "^2.0",
 		"bpampuch/pdfmake": "^0.1.24",
 		"components/flag-icon-css": "^2.8",
