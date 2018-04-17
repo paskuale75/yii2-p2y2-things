@@ -21,6 +21,20 @@
  */
 
 return array(
+	'P2CoreAsset' => array(
+		'sourcePath' => '@p2m@/pub',
+		'css' => [
+			'css/p2additions.css',
+		],
+		'js' => [
+			//'js/p2additions.js',
+		],
+		'depends' => [
+			'p2m\assets\base\P2YiiAsset',
+			'p2m\assets\base\P2BootstrapAsset',
+			'p2m\assets\base\P2FontAwesomeAsset',
+		],
+	),
 	'P2JqueryAsset' => array(
 		'version' => '3.2.1',
 		'sourcePath' => 'code.jquery.com',
@@ -874,20 +888,6 @@ return array(
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 			'p2m\assets\RaphaelAsset',
-		],
-	),
-	'P2CoreAsset' => array(
-		'sourcePath' => '@p2m@/pub',
-		'css' => [
-			'css/p2additions.css',
-		],
-		'js' => [
-			//'js/p2additions.js',
-		],
-		'depends' => [
-			'p2m\assets\base\P2YiiAsset',
-			'p2m\assets\base\P2BootstrapAsset',
-			'p2m\assets\base\P2FontAwesomeAsset',
 		],
 	),
 	'PrettyPhotoAsset' => array(
