@@ -23,25 +23,16 @@
 return array(
 	'P2JqueryAsset' => array(
 		'version' => '3.2.1',
-		'published' => [
-			'sourcePath' => '@p2m@/jquery',
-			'js' => [
-				'jquery-##-version-##.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//code.jquery.com',
-			'js' => [
-				'jquery-##-version-##.min.js',
-			],
+		'sourcePath' => 'code.jquery.com',
+		'baseUrl' => '@p2m@/jquery',
+		'js' => [
+			'jquery-##-version-##.min.js',
 		],
 	),
 	'P2YiiAsset' => array(
-		'published' => [
-			'sourcePath' => '@yii/assets',
-			'js' => [
-				'yii.js',
-			],
+		'sourcePath' => '@yii/assets',
+		'js' => [
+			'yii.js',
 		],
 		'depends' => [
 			'p2m\assets\base\P2JqueryAsset',
@@ -49,17 +40,10 @@ return array(
 	),
 	'P2BootstrapPluginAsset' => array(
 		'version' => '3.3.7',
-		'published' => [
-			'sourcePath' => '@bower/bootstrap/dist',
-			'js' => [
-				'js/bootstrap.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/',
-			'js' => [
-				'js/bootstrap.min.js',
-			],
+		'sourcePath' => 'maxcdn.bootstrapcdn.com/bootstrap/',
+		'baseUrl' => '@bower/bootstrap/dist',
+		'js' => [
+			'js/bootstrap.min.js',
 		],
 		'depends' => [
 			'p2m\assets\base\P2JqueryAsset',
@@ -67,17 +51,10 @@ return array(
 	),
 	'P2BootstrapAsset' => array(
 		'version' => '3.3.7',
-		'published' => [
-			'sourcePath' => '@p2m@/bootstrap-##-version-##-dist',
-			'css' => [
-				'css/bootstrap.min.css',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//maxcdn.bootstrapcdn.com/bootstrap/##-version-##',
-			'css' => [
-				'css/bootstrap.min.css',
-			],
+		'sourcePath' => 'maxcdn.bootstrapcdn.com/bootstrap/##-version-##',
+		'baseUrl' => '@p2m@/bootstrap-##-version-##-dist',
+		'css' => [
+			'css/bootstrap.min.css',
 		],
 		'depends' => [
 			'p2m\assets\base\P2BootstrapPluginAsset',
@@ -85,17 +62,10 @@ return array(
 	),
 	'P2FontAwesomeAsset' => array(
 		'version' => '4.7.0',
-		'published' => [
-			'sourcePath' => '@vendor/fortawesome/font-awesome',
-			'css' => [
-				'css/font-awesome.min.css',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//maxcdn.bootstrapcdn.com/font-awesome/##-version-##',
-			'css' => [
-				'css/font-awesome.min.css',
-			],
+		'sourcePath' => 'maxcdn.bootstrapcdn.com/font-awesome/##-version-##',
+		'baseUrl' => '@vendor/fortawesome/font-awesome',
+		'css' => [
+			'css/font-awesome.min.css',
 		],
 	),
 	'DataTablesBundleAsset' => array(
@@ -122,25 +92,14 @@ return array(
 	),
 	'DataTablesBootstrapAsset' => array(
 		'version' => '1.10.15',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/DataTables-##-version-##/media',
-			'css' => [
-				'css/dataTables.bootstrap.min.css',
-			],
-			'js' => [
-				'js/jquery.dataTables.min.js',
-				'js/dataTables.bootstrap.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/DataTables-##-version-##/media',
+		'css' => [
+			'css/dataTables.bootstrap.min.css',
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/##-version-##',
-			'css' => [
-				'css/dataTables.bootstrap.min.css',
-			],
-			'js' => [
-				'js/jquery.dataTables.min.js',
-				'js/dataTables.bootstrap.min.js',
-			],
+		'js' => [
+			'js/jquery.dataTables.min.js',
+			'js/dataTables.bootstrap.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -148,25 +107,14 @@ return array(
 	),
 	'DataTablesAutoFillAsset' => array(
 		'version' => '2.2.0',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/AutoFill-##-version-##',
-			'css' => [
-				'css/autoFill.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.autoFill.min.js',
-				'js/autoFill.bootstrap.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/autofill/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/AutoFill-##-version-##',
+		'css' => [
+			'css/autoFill.bootstrap.min.css',
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/autofill/##-version-##',
-			'css' => [
-				'css/autoFill.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.autoFill.min.js',
-				'js/autoFill.bootstrap.min.js',
-			],
+		'js' => [
+			'js/dataTables.autoFill.min.js',
+			'js/autoFill.bootstrap.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
@@ -174,25 +122,14 @@ return array(
 	),
 	'DataTablesButtonsAsset' => array(
 		'version' => '1.3.1',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/Buttons-##-version-##',
-			'css' => [
-				'css/buttons.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.buttons.min.js',
-				'js/buttons.bootstrap.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/buttons/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/Buttons-##-version-##',
+		'css' => [
+			'css/buttons.bootstrap.min.css',
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/buttons/##-version-##',
-			'css' => [
-				'css/buttons.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.buttons.min.js',
-				'js/buttons.bootstrap.min.js',
-			],
+		'js' => [
+			'js/dataTables.buttons.min.js',
+			'js/buttons.bootstrap.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
@@ -200,17 +137,13 @@ return array(
 	),
 	'DataTablesButtonsColVisAsset' => array(
 		'version' => '1.3.1',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/Buttons-##-version-##',
-			'js' => [
-				'js/buttons.colVis.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/buttons/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/Buttons-##-version-##',
+		'js' => [
+			'js/buttons.colVis.min.js',
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/buttons/##-version-##',
-			'js' => [
-				'js/buttons.colVis.min.js',
-			],
+		'js' => [
+			'js/buttons.colVis.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesButtonsAsset',
@@ -218,17 +151,10 @@ return array(
 	),
 	'DataTablesButtonsFlashAsset' => array(
 		'version' => '1.3.1',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/Buttons-##-version-##',
-			'js' => [
-				'js/buttons.flash.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/buttons/##-version-##',
-			'js' => [
-				'js/buttons.flash.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/buttons/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/Buttons-##-version-##',
+		'js' => [
+			'js/buttons.flash.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesButtonsAsset',
@@ -236,17 +162,10 @@ return array(
 	),
 	'DataTablesButtonsHTML5Asset' => array(
 		'version' => '1.3.1',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/Buttons-##-version-##',
-			'js' => [
-				'js/buttons.html5.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/buttons/##-version-##',
-			'js' => [
-				'js/buttons.html5.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/buttons/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/Buttons-##-version-##',
+		'js' => [
+			'js/buttons.html5.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesButtonsAsset',
@@ -254,17 +173,10 @@ return array(
 	),
 	'DataTablesButtonsPrintAsset' => array(
 		'version' => '1.3.1',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/Buttons-##-version-##',
-			'js' => [
-				'js/buttons.print.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/buttons/##-version-##',
-			'js' => [
-				'js/buttons.print.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/buttons/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/Buttons-##-version-##',
+		'js' => [
+			'js/buttons.print.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesButtonsAsset',
@@ -272,23 +184,13 @@ return array(
 	),
 	'DataTablesColReorderAsset' => array(
 		'version' => '1.3.3',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/ColReorder-##-version-##',
-			'css' => [
-				'css/colReorder.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.colReorder.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/colreorder/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/ColReorder-##-version-##',
+		'css' => [
+			'css/colReorder.bootstrap.min.css',
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/colreorder/##-version-##',
-			'css' => [
-				'css/colReorder.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.colReorder.min.js',
-			],
+		'js' => [
+			'js/dataTables.colReorder.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
@@ -296,23 +198,13 @@ return array(
 	),
 	'DataTablesFixedColumnsAsset' => array(
 		'version' => '3.2.2',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/FixedColumns-##-version-##',
-			'css' => [
-				'css/fixedColumns.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.fixedColumns.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/fixedcolumns/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/FixedColumns-##-version-##',
+		'css' => [
+			'css/fixedColumns.bootstrap.min.css',
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/fixedcolumns/##-version-##',
-			'css' => [
-				'css/fixedColumns.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.fixedColumns.min.js',
-			],
+		'js' => [
+			'js/dataTables.fixedColumns.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
@@ -320,23 +212,13 @@ return array(
 	),
 	'DataTablesFixedHeaderAsset' => array(
 		'version' => '3.1.2',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/FixedHeader-##-version-##',
-			'css' => [
-				'css/fixedHeader.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.fixedHeader.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/fixedheader/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/FixedHeader-##-version-##',
+		'css' => [
+			'css/fixedHeader.bootstrap.min.css',
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/fixedheader/##-version-##',
-			'css' => [
-				'css/fixedHeader.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.fixedHeader.min.js',
-			],
+		'js' => [
+			'js/dataTables.fixedHeader.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
@@ -344,23 +226,13 @@ return array(
 	),
 	'DataTablesKeyTableAsset' => array(
 		'version' => '2.2.1',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/KeyTable-##-version-##',
-			'css' => [
-				'css/keyTable.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.keyTable.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/keytable/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/KeyTable-##-version-##',
+		'css' => [
+			'css/keyTable.bootstrap.min.css',
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/keytable/##-version-##',
-			'css' => [
-				'css/keyTable.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.keyTable.min.js',
-			],
+		'js' => [
+			'js/dataTables.keyTable.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
@@ -368,25 +240,14 @@ return array(
 	),
 	'DataTablesResponsiveAsset' => array(
 		'version' => '2.1.0',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/Responsive-##-version-##',
-			'css' => [
-				'css/responsive.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.responsive.min.js',
-				'js/responsive.bootstrap.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/responsive/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/Responsive-##-version-##',
+		'css' => [
+			'css/responsive.bootstrap.min.css',
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/responsive/##-version-##',
-			'css' => [
-				'css/responsive.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.responsive.min.js',
-				'js/responsive.bootstrap.min.js',
-			],
+		'js' => [
+			'js/dataTables.responsive.min.js',
+			'js/responsive.bootstrap.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
@@ -394,23 +255,13 @@ return array(
 	),
 	'DataTablesRowGroupAsset' => array(
 		'version' => '1.0.0',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/RowGroup-##-version-##',
-			'css' => [
-				'css/rowGroup.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.rowGroup.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/rowgroup/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/RowGroup-##-version-##',
+		'css' => [
+			'css/rowGroup.bootstrap.min.css',
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/rowgroup/##-version-##',
-			'css' => [
-				'css/rowGroup.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.rowGroup.min.js',
-			],
+		'js' => [
+			'js/dataTables.rowGroup.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
@@ -418,23 +269,13 @@ return array(
 	),
 	'DataTablesRowReorderAsset' => array(
 		'version' => '1.2.0',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/RowReorder-##-version-##',
-			'css' => [
-				'css/rowReorder.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.rowReorder.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/rowreorder/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/RowReorder-##-version-##',
+		'css' => [
+			'css/rowReorder.bootstrap.min.css',
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/rowreorder/##-version-##',
-			'css' => [
-				'css/rowReorder.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.rowReorder.min.js',
-			],
+		'js' => [
+			'js/dataTables.rowReorder.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
@@ -442,23 +283,13 @@ return array(
 	),
 	'DataTablesScrollerAsset' => array(
 		'version' => '1.4.2',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/Scroller-##-version-##',
-			'css' => [
-				'css/scroller.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.scroller.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/scroller/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/Scroller-##-version-##',
+		'css' => [
+			'css/scroller.bootstrap.min.css',
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/scroller/##-version-##',
-			'css' => [
-				'css/scroller.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.scroller.min.js',
-			],
+		'js' => [
+			'js/dataTables.scroller.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
@@ -466,23 +297,13 @@ return array(
 	),
 	'DataTablesSelectAsset' => array(
 		'version' => '1.2.2',
-		'published' => [
-			'sourcePath' => '@p2m@/DataTables/Select-##-version-##',
-			'css' => [
-				'css/select.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.select.min.js',
-			],
+		'sourcePath' => 'cdn.datatables.net/select/##-version-##',
+		'baseUrl' => '@p2m@/DataTables/Select-##-version-##',
+		'css' => [
+			'css/select.bootstrap.min.css',
 		],
-		'static' => [
-			'baseUrl' => 'https://cdn.datatables.net/select/##-version-##',
-			'css' => [
-				'css/select.bootstrap.min.css',
-			],
-			'js' => [
-				'js/dataTables.select.min.js',
-			],
+		'js' => [
+			'js/dataTables.select.min.js',
 		],
 		'depends' => [
 			'p2m\assets\datatables\DataTablesBootstrapAsset',
@@ -490,17 +311,10 @@ return array(
 	),
 	'JSZipAsset' => array(
 		'version' => '3.1.3',
-		'published' => [
-			'sourcePath' => '@vendor/stuk/jszip/dist',
-			'js' => [
-				'jszip.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => 'https://cdnjs.cloudflare.com/ajax/libs/jszip/##-version-##',
-			'js' => [
-				'jszip.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/jszip/##-version-##',
+		'baseUrl' => '@vendor/stuk/jszip/dist',
+		'js' => [
+			'jszip.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -508,19 +322,11 @@ return array(
 	),
 	'PdfMakeAsset' => array(
 		'version' => '0.1.27',
-		'published' => [
-			'sourcePath' => '@vendor/bpampuch/pdfmake',
-			'js' => [
-				'build/pdfmake.min.js',
-				'build/vfs_fonts.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => 'https://cdn.rawgit.com/bpampuch/pdfmake/##-version-##',
-			'js' => [
-				'build/pdfmake.min.js',
-				'build/vfs_fonts.js',
-			],
+		'sourcePath' => 'cdn.rawgit.com/bpampuch/pdfmake/##-version-##',
+		'baseUrl' => '@vendor/bpampuch/pdfmake',
+		'js' => [
+			'build/pdfmake.min.js',
+			'build/vfs_fonts.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -549,17 +355,10 @@ return array(
 	),
 	'FlotAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -567,17 +366,10 @@ return array(
 	),
 	'FlotCanvasAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.canvas.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.canvas.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.canvas.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -585,17 +377,10 @@ return array(
 	),
 	'FlotCategoriesAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.categories.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.categories.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.categories.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -603,47 +388,25 @@ return array(
 	),
 	'FlotChartsAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.min.js',
-				'jquery.colorhelpers.min.js',
-				'jquery.flot.canvas.min.js',
-				'jquery.flot.categories.min.js',
-				'jquery.flot.crosshair.min.js',
-				'jquery.flot.errorbars.min.js',
-				'jquery.flot.fillbetween.min.js',
-				'jquery.flot.image.min.js',
-				'jquery.flot.navigate.min.js',
-				'jquery.flot.pie.min.js',
-				'jquery.flot.resize.min.js',
-				'jquery.flot.selection.min.js',
-				'jquery.flot.stack.min.js',
-				'jquery.flot.symbol.min.js',
-				'jquery.flot.threshold.min.js',
-				'jquery.flot.time.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.min.js',
-				'jquery.colorhelpers.min.js',
-				'jquery.flot.canvas.min.js',
-				'jquery.flot.categories.min.js',
-				'jquery.flot.crosshair.min.js',
-				'jquery.flot.errorbars.min.js',
-				'jquery.flot.fillbetween.min.js',
-				'jquery.flot.image.min.js',
-				'jquery.flot.navigate.min.js',
-				'jquery.flot.pie.min.js',
-				'jquery.flot.resize.min.js',
-				'jquery.flot.selection.min.js',
-				'jquery.flot.stack.min.js',
-				'jquery.flot.symbol.min.js',
-				'jquery.flot.threshold.min.js',
-				'jquery.flot.time.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.min.js',
+			'jquery.colorhelpers.min.js',
+			'jquery.flot.canvas.min.js',
+			'jquery.flot.categories.min.js',
+			'jquery.flot.crosshair.min.js',
+			'jquery.flot.errorbars.min.js',
+			'jquery.flot.fillbetween.min.js',
+			'jquery.flot.image.min.js',
+			'jquery.flot.navigate.min.js',
+			'jquery.flot.pie.min.js',
+			'jquery.flot.resize.min.js',
+			'jquery.flot.selection.min.js',
+			'jquery.flot.stack.min.js',
+			'jquery.flot.symbol.min.js',
+			'jquery.flot.threshold.min.js',
+			'jquery.flot.time.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -651,17 +414,10 @@ return array(
 	),
 	'FlotCrosshairAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.crosshair.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.crosshair.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.crosshair.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -669,17 +425,10 @@ return array(
 	),
 	'FlotErrorbarsAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.errorbars.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.errorbars.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.errorbars.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -687,17 +436,10 @@ return array(
 	),
 	'FlotFillbetweenAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.fillbetween.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.fillbetween.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.fillbetween.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -705,17 +447,10 @@ return array(
 	),
 	'FlotImageAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.image.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.image.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.image.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -723,17 +458,10 @@ return array(
 	),
 	'FlotNavigateAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.navigate.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.navigate.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.navigate.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -741,17 +469,10 @@ return array(
 	),
 	'FlotPieAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.pie.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.pie.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.pie.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -759,17 +480,10 @@ return array(
 	),
 	'FlotResizeAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.resize.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.resize.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.resize.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -777,17 +491,10 @@ return array(
 	),
 	'FlotSelectionAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.selection.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.selection.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.selection.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -795,17 +502,10 @@ return array(
 	),
 	'FlotStackAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.stack.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.stack.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.stack.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -813,17 +513,10 @@ return array(
 	),
 	'FlotSymbolAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.symbol.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.symbol.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.symbol.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -831,17 +524,10 @@ return array(
 	),
 	'FlotThresholdAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.threshold.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.threshold.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.threshold.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -849,17 +535,10 @@ return array(
 	),
 	'FlotTimeAsset' => array(
 		'version' => '0.8.3',
-		'published' => [
-			'sourcePath' => '@p2m@/flot-##-version-##',
-			'js' => [
-				'jquery.flot.time.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
-			'js' => [
-				'jquery.flot.time.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot/##-version-##',
+		'baseUrl' => '@p2m@/flot-##-version-##',
+		'js' => [
+			'jquery.flot.time.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -867,17 +546,10 @@ return array(
 	),
 	'FlotTooltipAsset' => array(
 		'version' => '0.9.0',
-		'published' => [
-			'sourcePath' => '@p2m@/flot.tooltip-##-version-##',
-			'js' => [
-				'js/jquery.flot.tooltip.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/flot.tooltip/##-version-##',
-			'js' => [
-				'jquery.flot.tooltip.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/flot.tooltip/##-version-##',
+		'baseUrl' => '@p2m@/flot.tooltip-##-version-##',
+		'js' => [
+			'jquery.flot.tooltip.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -885,11 +557,9 @@ return array(
 	),
 	'ColorHelpersAsset' => array(
 		'version' => '1.1-1',
-		'published' => [
-			'sourcePath' => '@p2m@/jquery-colorhelpers-jquery-colorhelpers-##-version-##',
-			'js' => [
-				'jquery.colorhelpers.min.js',
-			],
+		'sourcePath' => '@p2m@/jquery-colorhelpers-jquery-colorhelpers-##-version-##',
+		'js' => [
+			'jquery.colorhelpers.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -898,11 +568,9 @@ return array(
 	),
 	'AmplitudejsAsset' => array(
 		'version' => '2.2',
-		'published' => [
-			'sourcePath' => '@p2m@/amplitudejs-##-version-##',
-			'js' => [
-				'js/amplitude.min.js',
-			],
+		'sourcePath' => '@p2m@/amplitudejs-##-version-##',
+		'js' => [
+			'js/amplitude.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -911,17 +579,10 @@ return array(
 	),
 	'AnimateAsset' => array(
 		'version' => '3.5.2',
-		'published' => [
-			'sourcePath' => '@vendor/drmonty/animate.css',
-			'css' => [
-				'css/animate.min.css',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/animate.css/##-version-##',
-			'css' => [
-				'animate.min.css',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/animate.css/##-version-##',
+		'baseUrl' => '@vendor/drmonty/animate.css',
+		'css' => [
+			'animate.min.css',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -929,31 +590,22 @@ return array(
 	),
 	'BootstrapSocialAsset' => array(
 		'version' => '5.1.1',
-		'published' => [
-			'sourcePath' => '@p2m@/bootstrap-social-##-version-##',
-			'css' => [
-				'bootstrap-social.css',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/bootstrap-social/##-version-##',
-			'css' => [
-				'bootstrap-social.min.css',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/bootstrap-social/##-version-##',
+		'baseUrl' => '@p2m@/bootstrap-social-##-version-##',
+		'css' => [
+			'bootstrap-social.min.css',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
 	),
 	'BootstrapSweetalertAsset' => array(
-		'published' => [
-			'sourcePath' => '@p2m@/bootstrap-sweetalert-##-version-##/dist',
-			'css' => [
-				'sweet-alert.css',
-			],
-			'js' => [
-				'sweet-alert.min.js',
-			],
+		'sourcePath' => '@p2m@/bootstrap-sweetalert-##-version-##/dist',
+		'css' => [
+			'sweet-alert.css',
+		],
+		'js' => [
+			'sweet-alert.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -961,34 +613,22 @@ return array(
 	),
 	'BootstrapSwitchAsset' => array(
 		'version' => '3.3.2',
-		'published' => [
-			'sourcePath' => '@vendor/nostalgiaz/bootstrap-switch/dist',
-			'css' => [
-				'css/bootstrap3/bootstrap-switch.min.css',
-			],
-			'js' => [
-				'js/bootstrap-switch.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/##-version-##',
+		'baseUrl' => '@vendor/nostalgiaz/bootstrap-switch/dist',
+		'css' => [
+			'css/bootstrap3/bootstrap-switch.min.css',
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/##-version-##',
-			'css' => [
-				'css/bootstrap3/bootstrap-switch.min.css',
-			],
-			'js' => [
-				'js/bootstrap-switch.min.js',
-			],
+		'js' => [
+			'js/bootstrap-switch.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
 	),
 	'CircleButtonsAsset' => array(
-		'published' => [
-			'sourcePath' => '@p2m@/pub',
-			'css' => [
-				'css/circle-buttons.css',
-			],
+		'sourcePath' => '@p2m@/pub',
+		'css' => [
+			'css/circle-buttons.css',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -996,23 +636,13 @@ return array(
 	),
 	'EkkoLightboxAsset' => array(
 		'version' => '4.0.1',
-		'published' => [
-			'sourcePath' => '@vendor/drmonty/ekko-lightbox',
-			'css' => [
-				'css/ekko-lightbox.min.css',
-			],
-			'js' => [
-				'js/ekko-lightbox.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/##-version-##',
+		'baseUrl' => '@vendor/drmonty/ekko-lightbox',
+		'css' => [
+			'ekko-lightbox.min.css',
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/##-version-##',
-			'css' => [
-				'ekko-lightbox.min.css',
-			],
-			'js' => [
-				'ekko-lightbox.min.js',
-			],
+		'js' => [
+			'ekko-lightbox.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1020,17 +650,10 @@ return array(
 	),
 	'FitvidsAsset' => array(
 		'version' => '1.2.0',
-		'published' => [
-			'sourcePath' => '@p2m@/FitVids.js-##-version-##',
-			'js' => [
-				'jquery.fitvids.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fitvids/##-version-##',
-			'js' => [
-				'jquery.fitvids.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/fitvids/##-version-##',
+		'baseUrl' => '@p2m@/FitVids.js-##-version-##',
+		'js' => [
+			'jquery.fitvids.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1038,17 +661,10 @@ return array(
 	),
 	'FlagIconCssAsset' => array(
 		'version' => '2.8.0',
-		'published' => [
-			'sourcePath' => '@vendor/components/flag-icon-css',
-			'css' => [
-				'css/flag-icon.min.css',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdn.jsdelivr.net/flag-icon-css/##-version-##',
-			'css' => [
-				'css/flag-icon.min.css',
-			],
+		'sourcePath' => 'cdn.jsdelivr.net/flag-icon-css/##-version-##',
+		'baseUrl' => '@vendor/components/flag-icon-css',
+		'css' => [
+			'css/flag-icon.min.css',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1056,23 +672,13 @@ return array(
 	),
 	'FullCalendarAsset' => array(
 		'version' => '3.2.0',
-		'published' => [
-			'sourcePath' => '@p2m@/fullcalendar-##-version-##',
-			'css' => [
-				'fullcalendar.min.css',
-			],
-			'js' => [
-				'fullcalendar.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/fullcalendar/##-version-##',
+		'baseUrl' => '@p2m@/fullcalendar-##-version-##',
+		'css' => [
+			'fullcalendar.min.css',
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/##-version-##',
-			'css' => [
-				'fullcalendar.min.css',
-			],
-			'js' => [
-				'fullcalendar.min.js',
-			],
+		'js' => [
+			'fullcalendar.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1083,17 +689,10 @@ return array(
 	),
 	'FullCalendarPrintAsset' => array(
 		'version' => '3.2.0',
-		'published' => [
-			'sourcePath' => '@p2m@/fullcalendar-##-version-##',
-			'css' => [
-				'fullcalendar.print.css',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/##-version-##',
-			'css' => [
-				'fullcalendar.print.css',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/fullcalendar/##-version-##',
+		'baseUrl' => '@p2m@/fullcalendar-##-version-##',
+		'css' => [
+			'fullcalendar.print.css',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1104,39 +703,24 @@ return array(
 	),
 	'MomentAsset' => array(
 		'version' => '2.22.0',
-		'published' => [
-			'sourcePath' => '@p2m@/moment-##-version-##/min',
-			'js' => [
-				'moment.min.js'
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment.js/##-version-##',
-			'js' => [
-				'moment.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/moment.js/##-version-##',
+		'baseUrl' => '@p2m@/moment-##-version-##/min',
+		'js' => [
+			'moment.min.js',
 		],
 	),
 	'MomentTimezoneAsset' => array(
 		'version' => '0.5.14',
-		'published' => [
-			'sourcePath' => '@p2m@/moment-timezone-##-version-##/builds',
-			'js' => [
-				'moment-timezone.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/moment-timezone/##-version-##',
-			'js' => [
-				'moment-timezone.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/moment-timezone/##-version-##',
+		'baseUrl' => '@p2m@/moment-timezone-##-version-##/builds',
+		'js' => [
+			'moment-timezone.min.js',
 		],
 	),
 	'GMapsApiAsset' => array(
-		'static' => [
-			'js' => [
-				'http://maps.google.com/maps/api/js?sensor=true',
-			],
+		'baseUrl' => 'maps.google.com/maps/api',
+		'js' => [
+			'js?sensor=true',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1144,17 +728,10 @@ return array(
 	),
 	'GMapsAsset' => array(
 		'version' => '0.4.25',
-		'published' => [
-			'sourcePath' => '@p2m@/gmaps-##-version-##',
-			'js' => [
-				'gmaps.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/gmaps.js/##-version-##',
-			'js' => [
-				'gmaps.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/gmaps.js/##-version-##',
+		'baseUrl' => '@p2m@/gmaps-##-version-##',
+		'js' => [
+			'gmaps.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1163,17 +740,10 @@ return array(
 	),
 	'HolderAsset' => array(
 		'version' => '2.9.4',
-		'published' => [
-			'sourcePath' => '@vendor/imsky/holderjs',
-			'js' => [
-				'holder.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/holder/##-version-##',
-			'js' => [
-				'holder.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/holder/##-version-##',
+		'baseUrl' => '@vendor/imsky/holderjs',
+		'js' => [
+			'holder.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1181,17 +751,10 @@ return array(
 	),
 	'IsotopeAsset' => array(
 		'version' => '3.0.2',
-		'published' => [
-			'sourcePath' => '@p2m@/isotope-##-version-##/dist',
-			'js' => [
-				'jquery.isotope.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/##-version-##',
-			'js' => [
-				'isotope.pkgd.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/jquery.isotope/##-version-##',
+		'baseUrl' => '@p2m@/isotope-##-version-##/dist',
+		'js' => [
+			'isotope.pkgd.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1199,17 +762,10 @@ return array(
 	),
 	'JqueryCountToAsset' => array(
 		'version' => '1.2.0',
-		'published' => [
-			'sourcePath' => '@p2m@/jquery-countTo-##-version-##',
-			'js' => [
-				'jquery.countTo.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdn.jsdelivr.net/jquery.countto/##-version-##',
-			'js' => [
-				'jquery.countTo.min.js',
-			],
+		'sourcePath' => 'cdn.jsdelivr.net/jquery.countto/##-version-##',
+		'baseUrl' => '@p2m@/jquery-countTo-##-version-##',
+		'js' => [
+			'jquery.countTo.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1218,21 +774,11 @@ return array(
 	),
 	'JqueryEasingAsset' => array(
 		'version' => '1.4.1',
-		'published' => [
-			'sourcePath' => '@p2m@/jquery.easing-##-version-##',
-			'css' => [],
-			'js' => [
-				'jquery.easing.min.js',
-				'jquery.easing.compatibility.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jquery-easing/##-version-##',
-			'css' => [],
-			'js' => [
-				'jquery.easing.min.js',
-				'jquery.easing.compatibility.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/jquery-easing/##-version-##',
+		'baseUrl' => '@p2m@/jquery.easing-##-version-##',
+		'js' => [
+			'jquery.easing.min.js',
+			'jquery.easing.compatibility.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1240,17 +786,10 @@ return array(
 	),
 	'JqueryMigrateAsset' => array(
 		'version' => '3.0.0',
-		'published' => [
-			'sourcePath' => '@p2m@/jquery',
-			'js' => [
-				'jquery-migrate-##-version-##.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//code.jquery.com',
-			'js' => [
-				'jquery-migrate-##-version-##.min.js',
-			],
+		'sourcePath' => 'code.jquery.com',
+		'baseUrl' => '@p2m@/jquery',
+		'js' => [
+			'jquery-migrate-##-version-##.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1259,17 +798,10 @@ return array(
 	),
 	'JuiAsset' => array(
 		'version' => '1.12.1',
-		'published' => [
-			'sourcePath' => '@p2m@/jquery',
-			'js' => [
-				'jquery-ui.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//code.jquery.com',
-			'js' => [
-				'ui/##-version-##/jquery-ui.min.js',
-			],
+		'sourcePath' => 'code.jquery.com',
+		'baseUrl' => '@p2m@/jquery',
+		'js' => [
+			'ui/##-version-##/jquery-ui.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1278,23 +810,13 @@ return array(
 	),
 	'Lightbox2Asset' => array(
 		'version' => '2.9.0',
-		'published' => [
-			'sourcePath' => '@p2m@/lightbox2-##-version-##/dist',
-			'css' => [
-				'css/lightbox.min.css',
-			],
-			'js' => [
-				'js/lightbox.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/lightbox2/##-version-##',
+		'baseUrl' => '@p2m@/lightbox2-##-version-##/dist',
+		'css' => [
+			'css/lightbox.min.css',
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/lightbox2/##-version-##',
-			'css' => [
-				'css/lightbox.min.css',
-			],
-			'js' => [
-				'js/lightbox.min.js',
-			],
+		'js' => [
+			'js/lightbox.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1302,23 +824,13 @@ return array(
 	),
 	'MagnificPopupAsset' => array(
 		'version' => '1.1.0',
-		'published' => [
-			'sourcePath' => '@vendor/dimsemenov/magnific-popup/dist',
-			'css' => [
-				'magnific-popup.min.css',
-			],
-			'js' => [
-				'jquery.magnific-popup.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/##-version-##',
+		'baseUrl' => '@vendor/dimsemenov/magnific-popup/dist',
+		'css' => [
+			'magnific-popup.min.css',
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/##-version-##',
-			'css' => [
-				'magnific-popup.min.css',
-			],
-			'js' => [
-				'jquery.magnific-popup.min.js',
-			],
+		'js' => [
+			'jquery.magnific-popup.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1326,17 +838,10 @@ return array(
 	),
 	'MasonryAsset' => array(
 		'version' => '4.1.1',
-		'published' => [
-			'sourcePath' => '@p2m@/masonry-##-version-##/dist',
-			'js' => [
-				'masonry.pkgd.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/masonry/##-version-##',
-			'js' => [
-				'masonry.pkgd.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/masonry/##-version-##',
+		'baseUrl' => '@p2m@/masonry-##-version-##/dist',
+		'js' => [
+			'masonry.pkgd.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1344,23 +849,13 @@ return array(
 	),
 	'MetisMenuAsset' => array(
 		'version' => '2.6.2',
-		'published' => [
-			'sourcePath' => '@vendor/onokumus/metismenu/dist',
-			'css' => [
-				'metisMenu.min.css',
-			],
-			'js' => [
-				'metisMenu.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/metisMenu/##-version-##',
+		'baseUrl' => '@vendor/onokumus/metismenu/dist',
+		'css' => [
+			'metisMenu.min.css',
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/metisMenu/##-version-##',
-			'css' => [
-				'metisMenu.min.css',
-			],
-			'js' => [
-				'metisMenu.min.js',
-			],
+		'js' => [
+			'metisMenu.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1368,23 +863,13 @@ return array(
 	),
 	'MorrisAsset' => array(
 		'version' => '0.5.1',
-		'published' => [
-			'sourcePath' => '@p2m@/morris.js-##-version-##',
-			'css' => [
-				'morris.css',
-			],
-			'js' => [
-				'morris.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/morris.js/##-version-##',
+		'baseUrl' => '@p2m@/morris.js-##-version-##',
+		'css' => [
+			'morris.css',
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/morris.js/##-version-##',
-			'css' => [
-				'morris.css',
-			],
-			'js' => [
-				'morris.min.js',
-			],
+		'js' => [
+			'morris.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1392,14 +877,12 @@ return array(
 		],
 	),
 	'P2CoreAsset' => array(
-		'published' => [
-			'sourcePath' => '@p2m@/pub',
-			'css' => [
-				'css/p2additions.css',
-			],
-			'js' => [
-				//'js/p2additions.js',
-			],
+		'sourcePath' => '@p2m@/pub',
+		'css' => [
+			'css/p2additions.css',
+		],
+		'js' => [
+			//'js/p2additions.js',
 		],
 		'depends' => [
 			'p2m\assets\base\P2YiiAsset',
@@ -1409,23 +892,13 @@ return array(
 	),
 	'PrettyPhotoAsset' => array(
 		'version' => '3.1.6',
-		'published' => [
-			'sourcePath' => '@p2m@/prettyPhoto_##-version-##',
-			'css' => [
-				'css/prettyPhoto.min.css',
-			],
-			'js' => [
-				'js/jquery.prettyPhoto.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/prettyPhoto/##-version-##',
+		'baseUrl' => '@p2m@/prettyPhoto_##-version-##',
+		'css' => [
+			'css/prettyPhoto.min.css',
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/prettyPhoto/##-version-##',
-			'css' => [
-				'css/prettyPhoto.min.css',
-			],
-			'js' => [
-				'js/jquery.prettyPhoto.min.js',
-			],
+		'js' => [
+			'js/jquery.prettyPhoto.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1433,23 +906,13 @@ return array(
 	),
 	'QunitAsset' => array(
 		'version' => '2.2.1',
-		'published' => [
-			'sourcePath' => '@p2m@/jquery',
-			'css' => [
-				'qunit-##-version-##.css',
-			],
-			'js' => [
-				'qunit-##-version-##.js',
-			],
+		'sourcePath' => 'code.jquery.com/qunit',
+		'baseUrl' => '@p2m@/jquery',
+		'css' => [
+			'qunit-##-version-##.css',
 		],
-		'static' => [
-			'baseUrl' => '//code.jquery.com/qunit',
-			'css' => [
-				'qunit-##-version-##.css',
-			],
-			'js' => [
-				'qunit-##-version-##.js',
-			],
+		'js' => [
+			'qunit-##-version-##.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1457,17 +920,10 @@ return array(
 	),
 	'RaphaelAsset' => array(
 		'version' => '2.2.7',
-		'published' => [
-			'sourcePath' => '@p2m@/raphael-##-version-##',
-			'js' => [
-				'raphael.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/raphael/##-version-##',
-			'js' => [
-				'raphael.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/raphael/##-version-##',
+		'baseUrl' => '@p2m@/raphael-##-version-##',
+		'js' => [
+			'raphael.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1475,19 +931,10 @@ return array(
 	),
 	'ScrollRevealAsset' => array(
 		'version' => '3.3.4',
-		'published' => [
-			'sourcePath' => '@p2m@/scrollreveal-##-version-##/dist',
-			'css' => [],
-			'js' => [
-				'scrollreveal.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/##-version-##',
-			'css' => [],
-			'js' => [
-				'scrollreveal.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/##-version-##',
+		'baseUrl' => '@p2m@/scrollreveal-##-version-##/dist',
+		'js' => [
+			'scrollreveal.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1495,19 +942,11 @@ return array(
 	),
 	'SimpleLineIconsAsset' => array(
 		'version' => '2.4.1',
-		'published' => [
-			'sourcePath' => '@p2m@/simple-line-icons-##-version-##',
-			'css' => [
-				'css/simple-line-icons.css',
-			],
-			'js' => [],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/simple-line-icons/##-version-##',
+		'baseUrl' => '@p2m@/simple-line-icons-##-version-##',
+		'css' => [
+			'simple-line-icons.min.css',
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/simple-line-icons/##-version-##',
-			'css' => [
-				'simple-line-icons.min.css',
-			],
-			'js' => [],
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1515,34 +954,22 @@ return array(
 	),
 	'SweetAlertAsset' => array(
 		'version' => '1.1.3',
-		'published' => [
-			'sourcePath' => '@p2m@/sweetalert-##-version-##/dist',
-			'css' => [
-				'sweetalert.css',
-			],
-			'js' => [
-				'sweetalert.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/sweetalert/##-version-##',
+		'baseUrl' => '@p2m@/sweetalert-##-version-##/dist',
+		'css' => [
+			'sweet-alert.css',
 		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/sweetalert/##-version-##',
-			'css' => [
-				'sweet-alert.css',
-			],
-			'js' => [
-				'sweet-alert.min.js',
-			],
+		'js' => [
+			'sweet-alert.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
 	),
 	'TimelineAsset' => array(
-		'published' => [
-			'sourcePath' => '@p2m@/pub',
-			'css' => [
-				'css/timeline.css',
-			],
+		'sourcePath' => '@p2m@/pub',
+		'css' => [
+			'css/timeline.css',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1550,17 +977,10 @@ return array(
 	),
 	'TimelineCssAsset' => array(
 		'version' => '1.0.0',
-		'published' => [
-			'sourcePath' => '@p2m@/Timeline.css-##-version-##',
-			'css' => [
-				'css/timeline.css',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/timeline.css/##-version-##',
-			'css' => [
-				'timeline.min.css',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/timeline.css/##-version-##',
+		'baseUrl' => '@p2m@/Timeline.css-##-version-##',
+		'css' => [
+			'timeline.min.css',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1568,17 +988,10 @@ return array(
 	),
 	'WowAsset' => array(
 		'version' => '1.1.2',
-		'published' => [
-			'sourcePath' => '@p2m@/WOW-##-version-##/dist',
-			'js' => [
-				'wow.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/wow/##-version-##',
-			'js' => [
-				'wow.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/wow/##-version-##',
+		'baseUrl' => '@p2m@/WOW-##-version-##/dist',
+		'js' => [
+			'wow.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1587,17 +1000,10 @@ return array(
 	),
 	'JplayerAsset' => array(
 		'version' => '2.9.2',
-		'published' => [
-			'sourcePath' => '@vendor/happyworm/jplayer/dist',
-			'js' => [
-				'jplayer/jquery.jplayer.min.js',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jplayer/##-version-##',
-			'js' => [
-				'jplayer/jquery.jplayer.min.js',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/jplayer/##-version-##',
+		'baseUrl' => '@vendor/happyworm/jplayer/dist',
+		'js' => [
+			'jplayer/jquery.jplayer.min.js',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1606,17 +1012,10 @@ return array(
 	),
 	'BlueMondayAsset' => array(
 		'version' => '2.9.2',
-		'published' => [
-			'sourcePath' => '@vendor/happyworm/jplayer/dist',
-			'css' => [
-				'skin/blue.monday/css/jplayer.blue.monday.min.css',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jplayer/##-version-##',
-			'css' => [
-				'skin/blue.monday/css/jplayer.blue.monday.min.css',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/jplayer/##-version-##',
+		'baseUrl' => '@vendor/happyworm/jplayer/dist',
+		'css' => [
+			'skin/blue.monday/css/jplayer.blue.monday.min.css',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
@@ -1625,17 +1024,10 @@ return array(
 	),
 	'PinkFlagAsset' => array(
 		'version' => '2.9.2',
-		'published' => [
-			'sourcePath' => '@vendor/happyworm/jplayer/dist',
-			'css' => [
-				'skin/pink.flag/css/jplayer.pink.flag.min.css',
-			],
-		],
-		'static' => [
-			'baseUrl' => '//cdnjs.cloudflare.com/ajax/libs/jplayer/##-version-##',
-			'css' => [
-				'skin/pink.flag/css/jplayer.pink.flag.min.css',
-			],
+		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/jplayer/##-version-##',
+		'baseUrl' => '@vendor/happyworm/jplayer/dist',
+		'css' => [
+			'skin/pink.flag/css/jplayer.pink.flag.min.css',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',

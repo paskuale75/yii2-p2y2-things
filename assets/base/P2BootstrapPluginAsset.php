@@ -23,23 +23,13 @@
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
 
-/**
- * Load this asset with...
- * p2m\assets\base\P2BootstrapPluginAsset::register($this);
- *
- * or specify as a dependency with...
- *     'p2m\assets\base\P2BootstrapPluginAsset',
- */
-
 namespace p2m\assets\base;
 
 class P2BootstrapPluginAsset extends \p2m\assets\base\P2AssetBundle
 {
 	public function init()
 	{
-		$this->staticData['baseUrl'] .= $this->version;
-
-		$this->configureDataFileAsset();
+		$this->setAssetProperties();
 		parent::init();
 	}
 }

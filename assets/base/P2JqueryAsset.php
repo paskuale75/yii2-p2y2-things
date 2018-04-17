@@ -23,24 +23,15 @@
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
 
-/**
- * Load this asset with...
- * p2m\assets\base\P2JqueryAsset::register($this);
- *
- * or specify as a dependency with...
- *     'p2m\assets\base\P2JqueryAsset',
- */
-
 namespace p2m\assets\base;
 
 class P2JqueryAsset extends \p2m\assets\base\P2AssetBundle
 {
 	public function init()
 	{
-		$this->insertAssetVersion($this->publishedData['js'][0]);
-		$this->insertAssetVersion($this->staticData['js'][0]);
+		self::insertAssetVersion($this->assetData['js'][0]);
 
-		$this->configureDataFileAsset();
+		$this->setAssetProperties();
 		parent::init();
 	}
 }

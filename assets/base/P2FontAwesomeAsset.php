@@ -23,21 +23,13 @@
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
 
-/**
- * Load this asset with...
- * p2m\assets\base\P2FontAwesomeAsset::register($this);
- *
- * or specify as a dependency with...
- *     'p2m\assets\base\P2FontAwesomeAsset',
- */
-
 namespace p2m\assets\base;
 
 class P2FontAwesomeAsset extends \p2m\assets\base\P2AssetBundle
 {
 	public function init()
 	{
-		$this->configureDataFileAsset();
+		$this->setAssetProperties();
 		parent::init();
 	}
 }

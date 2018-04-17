@@ -23,32 +23,40 @@
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
 
-/**
- * Load this asset with...
- * p2m\assets\base\P2BootstrapAsset::register($this);
- *
- * or specify as a dependency with...
- *     'p2m\assets\base\P2BootstrapAsset',
- */
-
 namespace p2m\assets\base;
+
+use p2m\base\helpers\AssetsSettings;
 
 class P2BootstrapAsset extends \p2m\assets\base\P2AssetBundle
 {
 	public function init()
 	{
-		$this->configureDataFileAsset();
+		$bootswatch = self::bootswatch();
+
+		if($bootswatch) {
+			$this->assetData['sourcePath'] =
+				'@vendor/thomaspark/bootswatch/' . $bootswatch;
+			$this->assetData['baseUrl'] =
+				'stackpath.bootstrapcdn.com/bootswatch/##-version-##/' . $bootswatch;
+		}
+
+		$this->setAssetProperties();
 		parent::init();
 	}
 }
 
 /* params
-	'p2assets' => [
-		'useStatic' => true, // false or not set to use published assets
-		'bootswatchTheme' = 'cerulean', // set to _one_ of:
-			// 'cerulean', 'cosmo', 'cyborg', 'darkly',
-			// 'flatly', 'journal', 'lumen', 'paper',
-			// 'readable', 'sandstone', 'simplex', 'slate',
-			// 'spacelab', 'superhero', 'united', 'yeti',
+	'p2m' => [
+		'assets' => [
+			...
+			// Bootswatch themes
+			'bootswatch' = 'cerulean', // set to _one_ of:
+				// 'cerulean', 'cosmo', 'cyborg', 'darkly',
+				// 'flatly', 'journal', 'lumen', 'paper',
+				// 'readable', 'sandstone', 'simplex', 'slate',
+				// 'spacelab', 'superhero', 'united', 'yeti',
+				// or false or not set to use no theme
+		],
+		...
 	],
 */
