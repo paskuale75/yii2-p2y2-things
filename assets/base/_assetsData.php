@@ -732,9 +732,9 @@ return array(
 		],
 	),
 	'GMapsApiAsset' => array(
-		'baseUrl' => 'maps.google.com/maps/api',
+		'baseUrl' => 'maps.google.com/maps',
 		'js' => [
-			'js?sensor=true',
+			'api/js?sensor=true',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
