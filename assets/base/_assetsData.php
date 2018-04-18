@@ -783,7 +783,6 @@ return array(
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
-			'p2m\assets\base\P2JqueryAsset',
 		],
 	),
 	'JqueryEasingAsset' => array(
@@ -807,7 +806,6 @@ return array(
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
-			'p2m\assets\base\P2JqueryAsset',
 		],
 	),
 	'JuiAsset' => array(
@@ -819,7 +817,6 @@ return array(
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
-			'p2m\assets\base\P2JqueryAsset',
 		],
 	),
 	'Lightbox2Asset' => array(
@@ -1007,7 +1004,6 @@ return array(
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
-			'p2m\assets\base\P2JqueryAsset',
 		],
 	),
 	'BlueMondayAsset' => array(
