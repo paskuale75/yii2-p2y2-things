@@ -26,9 +26,19 @@ return array(
 		'css' => [
 			'css/p2additions.css',
 		],
+		/*
 		'js' => [
-			//'js/p2additions.js',
+			'js/p2additions.js',
 		],
+		'cssIntegrity' => [
+			'published' => 'published-hash',
+			'static' => 'static-hash',
+		],
+		'jsIntegrity' => [
+			'published' => 'published-hash',
+			'static' => 'static-hash',
+		],
+		*/
 		'depends' => [
 			'p2m\assets\base\P2YiiAsset',
 			'p2m\assets\base\P2BootstrapAsset',

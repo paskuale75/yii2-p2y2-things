@@ -97,7 +97,7 @@ class P2AssetBundle extends \p2m\base\assets\P2AssetBase
 	{
 		$allAssetsData = require(__DIR__ . '/_assetsData.php');
 
-		if(!array_key_exists(get_class($this), $allAssetsData)) {
+		if(!isset($allAssetsData[get_class($this)])) {
 			return;
 		}
 
