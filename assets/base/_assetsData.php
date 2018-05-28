@@ -3,7 +3,7 @@
  * _assetsData.php
  *
  * @author Pedro Plowman
- * @copyright Copyright &copy; Pedro Plowman, 2017
+ * @copyright Copyright &copy; Pedro Plowman, 2018
  * @link https://github.com/p2made
  * @license MIT
  *
@@ -20,19 +20,64 @@
  * ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ ##### ^ #####
  */
 
+/*
+ *
+	 * P2 asset data structure
+
+	'assetName' => array(
+		'version' => 'version',
+		'baseUrl' => 'baseUrl',
+		'sourcePath' => 'sourcePath',
+		'css' => [
+			'css/cssfile.css',
+		],
+		'cssOptions' => [
+		],
+		'cssIntegrity' => [
+			'published' = [
+				'published-hash',
+			],
+			'static' = [
+				'static-hash',
+			],
+		],
+		'js' => [
+			'js/jsfile.js',
+		],
+		'jsOptions' => [
+		],
+		'jsIntegrity' => [
+			'published' = [
+				'published-hash',
+			],
+			'static' = [
+				'static-hash',
+			],
+		],
+		'depends' => [
+			'some\useful\ThingAsset',
+		],
+		'publishOptions' => [
+		],
+	),
+
+ *
+ */
+
 return array(
 	'P2CoreAsset' => array(
 		'sourcePath' => '@p2m@/pub',
 		'css' => [
-			'css/p2additions.css',
+			'css/p2additions.min.css',
 		],
 		/*
+		'cssIntegrity' => [
+			'published' = [
+				'sha384-uafZTC4c/2/VoEsZyEf3LoFBuVitG/bhBulPMiTcK1r88sHZMz+0LP9/xy3IXzD0',
+			],
+		],
 		'js' => [
 			'js/p2additions.js',
-		],
-		'cssIntegrity' => [
-			'published' => 'published-hash',
-			'static' => 'static-hash',
 		],
 		'jsIntegrity' => [
 			'published' => 'published-hash',
@@ -51,6 +96,14 @@ return array(
 		'baseUrl' => '@p2m@/jquery',
 		'js' => [
 			'jquery-##-version-##.min.js',
+		],
+		'jsIntegrity' => [
+			'published' = [
+				'sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f',
+			],
+			'static' = [
+				'sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT',
+			],
 		],
 	),
 	'P2YiiAsset' => array(
@@ -652,7 +705,7 @@ return array(
 	'CircleButtonsAsset' => array(
 		'sourcePath' => '@p2m@/pub',
 		'css' => [
-			'css/circle-buttons.css',
+			'css/circle-buttons.min.css',
 		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
