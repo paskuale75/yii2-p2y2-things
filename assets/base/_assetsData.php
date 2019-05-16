@@ -1000,18 +1000,17 @@ return [
 			'p2m\assets\P2CoreAsset',
 		],
 	),
-	'SimpleLineIconsAsset' => array(
+	'SimpleLineIconsAsset' => [
 		'version' => '2.4.1',
 		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/simple-line-icons/##-version-##',
 		'baseUrl' => '@p2m@/simple-line-icons-##-version-##',
 		'css' => [
 			'simple-line-icons.min.css',
 		],
-		],
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	),
+	],
 	'SweetAlertAsset' => array(
 		'version' => '1.1.3',
 		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/sweetalert/##-version-##',
@@ -1026,7 +1025,7 @@ return [
 			'p2m\assets\P2CoreAsset',
 		],
 	),
-	'TimelineAsset' => array(
+	'TimelineAsset' => [
 		'sourcePath' => '@p2m@/pub',
 		'css' => [
 			'css/timeline.css',
@@ -1034,7 +1033,7 @@ return [
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	),
+	],
 	'TimelineCssAsset' => array(
 		'version' => '1.0.0',
 		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/timeline.css/##-version-##',
@@ -1058,7 +1057,7 @@ return [
 			'p2m\assets\AnimateAsset',
 		],
 	),
-	'JplayerAsset' => array(
+	'JplayerAsset' => [
 		'version' => '2.9.2',
 		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/jplayer/##-version-##',
 		'baseUrl' => '@vendor/happyworm/jplayer/dist',
@@ -1068,7 +1067,7 @@ return [
 		'depends' => [
 			'p2m\assets\P2CoreAsset',
 		],
-	),
+	],
 	'BlueMondayAsset' => array(
 		'version' => '2.9.2',
 		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/jplayer/##-version-##',
