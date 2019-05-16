@@ -64,8 +64,8 @@
  *
  */
 
-return array(
-	'P2CoreAsset' => array(
+return [
+	'P2CoreAsset' => [
 		'sourcePath' => '@p2m@/pub',
 		'css' => [
 			'css/p2additions.min.css',
@@ -89,8 +89,8 @@ return array(
 			'p2m\assets\base\P2BootstrapAsset',
 			'p2m\assets\base\P2FontAwesomeAsset',
 		],
-	),
-	'P2JqueryAsset' => array(
+	],
+	'P2JqueryAsset' => [
 		'version' => '3.2.1',
 		'sourcePath' => 'code.jquery.com',
 		'baseUrl' => '@p2m@/jquery',
@@ -98,15 +98,15 @@ return array(
 			'jquery-##-version-##.min.js',
 		],
 		'jsIntegrity' => [
-			'published' = [
+			'published' => [
 				'sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f',
 			],
-			'static' = [
+			'static' => [
 				'sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT',
 			],
 		],
-	),
-	'P2YiiAsset' => array(
+	],
+	'P2YiiAsset' => [
 		'sourcePath' => '@yii/assets',
 		'js' => [
 			'yii.js',
@@ -114,7 +114,7 @@ return array(
 		'depends' => [
 			'p2m\assets\base\P2JqueryAsset',
 		],
-	),
+	],
 	'P2BootstrapPluginAsset' => array(
 		'version' => '3.3.7',
 		'sourcePath' => 'maxcdn.bootstrapcdn.com/bootstrap/',
@@ -1081,7 +1081,7 @@ return array(
 			'p2m\assets\jPlayer\JplayerAsset',
 		],
 	),
-	'PinkFlagAsset' => array(
+	'PinkFlagAsset' => [
 		'version' => '2.9.2',
 		'sourcePath' => 'cdnjs.cloudflare.com/ajax/libs/jplayer/##-version-##',
 		'baseUrl' => '@vendor/happyworm/jplayer/dist',
@@ -1092,5 +1092,5 @@ return array(
 			'p2m\assets\P2CoreAsset',
 			'p2m\assets\jPlayer\JplayerAsset',
 		],
-	),
-);
+	],
+];
